@@ -1783,6 +1783,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-left: -30px;
     margin-bottom: .6rem;
 }
+.home-content h3.subtitle {
+    color: white;
+    margin-bottom: 1em;
+    margin-top: 0;
+    padding-left: 40px;
+}
 
 .home-content h3::before {
     display: block;
@@ -1795,6 +1801,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: 0;
     top: 50%;
 }
+
+.home-content h3.subtitle::before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-top: -1.5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
 
 .home-content h1 {
     font-family: "librebaskerville-bold", serif;
@@ -2141,13 +2160,13 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .home-content {
-        padding-bottom: 15rem;
+      padding-bottom: 15rem;
     }
     .home-content h1 {
         font-size: 4.2rem;
     }
     .home-content__main {
-        max-width: 380px;
+        max-width: 500px;
         padding: 0;
     }
     .home-content__scroll {
@@ -2249,8 +2268,20 @@ html.no-csstransitions .home-content__main {
 .timeline__block {
     position: relative;
     padding-left: 8rem;
-    min-height: 10rem;
+    padding-bottom: 0.6rem;
 }
+
+.timeline_year {
+    width: 50%;
+    text-align: center;
+    color: #862121;
+    background: white;
+    border: 6px solid #862121;
+    font-size: 1.5em;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
 
 .timeline__bullet {
     background: #0D0A0B;

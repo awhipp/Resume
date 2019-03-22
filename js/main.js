@@ -272,17 +272,17 @@
                     var x = 0;
                     stats.each(function () {
                         x+=1;
-                        var surplus = "";
-                        if(x==2 || x==3) {
-                          surplus = "+";
-                        }
+                        var surplus = "+";
                         var $this = $(this);
 
                         $({ Counter: 0 }).animate({ Counter: $this.text() }, {
                             duration: 4000,
                             easing: 'swing',
                             step: function (curValue) {
-                                $this.text(Math.ceil(curValue) + surplus);
+                                $this.text(Math.ceil(curValue));
+                            },
+                            complete: function (curValue) {
+                                $this.text($this.text() + surplus);
                             }
                         });
                     });
