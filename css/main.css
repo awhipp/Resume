@@ -1833,15 +1833,22 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 .home-content__main {
-    padding-right: 300px;
+    /* padding-right: 300px; */
     position: relative;
 }
 
 .home-content__buttons {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     bottom: 2.1rem;
+    display: flex;
     text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .home-content__buttons {
+      display: none;
+  }
 }
 
 .home-content__buttons .btn {
@@ -1849,7 +1856,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 210px;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    margin: 1.5rem 0 0 0;
+    margin: 1rem;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
