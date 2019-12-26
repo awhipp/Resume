@@ -175,7 +175,7 @@
             arrows: true,
             dots: false,
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             prevArrow: "<div class=\'slick-prev\'><i class=\'im im-arrow-left\' aria-hidden=\'true\'></i></div>",
             nextArrow: "<div class=\'slick-next\'><i class=\'im im-arrow-right\' aria-hidden=\'true\'></i></div>",
